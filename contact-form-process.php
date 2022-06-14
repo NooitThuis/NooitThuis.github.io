@@ -1,4 +1,15 @@
 <?php
+
+// the message
+$msg = "First line of text\nSecond line of text";
+
+// use wordwrap() if lines are longer than 70 characters
+$msg = wordwrap($msg,70);
+
+// send email
+mail("xipcsgo@gmail.com","My subject",$msg);
+
+/*
 if (isset($_POST['Email'])) {
 
     // EDIT THE FOLLOWING TWO LINES:
@@ -73,4 +84,5 @@ if (isset($_POST['Email'])) {
 
 <?php
 }
+*/
 ?>
